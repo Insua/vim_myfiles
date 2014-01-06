@@ -1,3 +1,15 @@
+snippet cw
+	${0}.addWindowListener(new WindowAdapter()
+	{
+		public void windowClosing(WindowEvent e)
+		{
+			System.exit(0);
+		}
+	});
+
+snippet pa
+	package ${0}
+
 snippet pc
     public class `expand("%:r")`
          {
@@ -8,6 +20,15 @@ snippet sop
 
 snippet iju
     import java.util.*;
+          ${0}
+
+snippet ija
+    import java.awt.*;
+          ${0}
+
+snippet ijae
+    import java.awt.*;	
+    import java.awt.event.*;
           ${0}
 
 snippet main
